@@ -1,0 +1,79 @@
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+
+* {
+    font: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gameArea {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 1em;
+}
+
+h2 {
+    margin-top: 4em;
+    font-size: 2em;
+}
+
+h3 {
+    margin-top: -0.5em;
+    font-size: 3em;
+}
+
+
+
+.die {
+    margin-bottom: 5em;
+}
+
+img {
+    width: 17em;
+    height: 17em;
+    box-shadow: black 0.8em 0.8em;
+    border-radius: 1em;
+}
+
+
+
+@keyframes roll {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.die:hover {
+    animation-name: roll;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+button {
+    height: 2em;
+    width: 6em;
+    background: none;
+    font-size: 2em;
+    border: none;
+    border-bottom: solid black 0.1em;
+    border-top: solid black 0.1em;
+}
+
+button:hover {
+    color: #F8E71C;
+    width: 8em;
+}
